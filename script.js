@@ -1,6 +1,5 @@
 ////// Fetch API OMDb //////
 ///////////////////////////
-const api_key = secrets.API_KEY
 const doSearch= (search) =>{
   const newSearch = search.split(' ').join('_')
   fetch(`https://www.omdbapi.com/?s=${newSearch}&apikey=${api_key}`)
